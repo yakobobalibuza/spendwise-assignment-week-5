@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendWise | Budget Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">SpendWise</div>
+        <p>Smart budgeting starts here.</p>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <h1>My Budget Dashboard</h1>
+            <p>Understand your budget, manage your expenses, and track your balance.</p>
+            <button id="updateBudgetBtn">Enter Budget Information</button>
+        </section>
+
+        <section class="summary">
+            <article class="card budget-card">
+                <p>Total Budget</p>
+                <h2 id="budget">KSh 0</h2>
+                <span>Your available budget</span>
+            </article>
+
+            <article class="card expense-card">
+                <p>Total Expenses</p>
+                <h2 id="expenses">KSh 0</h2>
+                <span>Your total spending</span>
+            </article>
+
+            <article class="card balance-card">
+                <p>Remaining Balance</p>
+                <h2 id="balance">KSh 0</h2>
+                <span>Your budget after expenses</span>
+            </article>
+        </section>
+
+        <section class="report">
+            <h2>Budget Report</h2>
+            <p id="status">Enter your budget information to see your report.</p>
+            <button id="calculateBtn">Calculate Balance</button>
+        </section>
+
+        <section class="tips">
+            <h2>Budgeting Tip</h2>
+            <p>Track your spending regularly and plan your expenses before spending.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SpendWise Budget Dashboard</p>
+    </footer>
+
+</body>
+</html>
